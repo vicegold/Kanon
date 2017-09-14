@@ -12,7 +12,6 @@
 </script>
 
 <style>
-  @import url(https://fonts.googleapis.com/css?family=Lato:300);
 
   * {
     margin: 0;
@@ -32,8 +31,9 @@
       );
     background-position: center;
     display: flex;
-    font-family: Lato, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     justify-content: center;
     text-align: center;
+    box-sizing: border-box;
   }
 </style>

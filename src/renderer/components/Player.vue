@@ -1,22 +1,21 @@
 <template>
   <div class="kan-container">
-    <mainbar></mainbar>
-    <h1>Welcome. {{raumserverRequestController}}</h1>
-    <current-page></current-page>
-    <versions></versions>
+    <sidebar></sidebar>
+    <main-content></main-content>
+    <player-controller></player-controller>
   </div>
 </template>
 
 <script>
-  import CurrentPage from './Player/CurrentPage'
-  import Mainbar from './Player/Mainbar'
-  import Versions from './Player/Versions'
+  import Sidebar from './Player/Sidebar'
+  import MainContent from './Player/MainContent'
+  import PlayerController from './Player/PlayerController'
   import App from '../App'
   export default {
     components: {
-      Mainbar,
-      CurrentPage,
-      Versions
+      Sidebar,
+      MainContent,
+      PlayerController
     },
     name: 'player',
     raumserverRequestData: App.raumserverHost + '/raumserver/data/',
@@ -28,10 +27,9 @@
 <style lang="scss">
   .kan-container {
     display: flex;
-    align-items: stretch;
-    flex-direction: column;
+    align-content: stretch;
+    flex-direction: row;
     height: 100vh;
     width: 100vw;
-    padding-bottom: 19px;
   }
 </style>

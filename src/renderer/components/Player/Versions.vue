@@ -18,12 +18,10 @@
 </script>
 
 <style lang="scss">
+  @import '../../assets/scss/variables.scss';
+
   .kan-debug {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: #f0f0f0;
-    right: 0;
-    padding: 10px 0;
+    margin: 0px 10px 0 auto;
+    color: rgba(white, 0.2);
   }
 </style>
