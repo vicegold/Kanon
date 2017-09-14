@@ -37,5 +37,6 @@
     box-sizing: border-box;
     -webkit-user-select: none;
     cursor: default;
+    overflow: hidden;
   }
 </style>
