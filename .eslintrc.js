@@ -9,6 +9,9 @@ module.exports = {
     node: true
   },
   extends: 'standard',
+  globals: {
+    __static: true
+  },
   plugins: [
     'html'
   ],
@@ -18,6 +21,8 @@ module.exports = {
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    // Allow empty line at EOF
+    "no-multiple-empty-lines": [1, {"max": 1}]
   }
-}
+};
