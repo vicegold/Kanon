@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'kanon',
+    name: 'Kanon',
     raumserverHost: 'http://192.168.7.234:8080'
   }
 </script>
@@ -35,5 +35,7 @@
     justify-content: center;
     text-align: center;
     box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
   }
 </style>

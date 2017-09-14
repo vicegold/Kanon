@@ -1,6 +1,6 @@
 {
-  "name": "kanon",
-  "version": "0.0.0",
+  "name": "Kanon",
+  "version": "0.1.0",
   "author": "Laurids Düllmann <hello@laurids.io>",
   "description": "Open source controller for Raumfeld multiroom devices.",
   "license": null,
@@ -22,7 +22,7 @@
     "postinstall": "npm run lint:fix"
   },
   "build": {
-    "productName": "kanon",
+    "productName": "Kanon",
     "appId": "io.laurids.kanon",
     "directories": {
       "output": "build"
@@ -63,6 +63,7 @@
     "vuex": "^2.3.1"
   },
   "devDependencies": {
+    "about-window": "^1.7.1",
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.1",

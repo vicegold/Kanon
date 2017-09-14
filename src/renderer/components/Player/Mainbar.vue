@@ -27,6 +27,8 @@
     align-items: center;
     border-bottom: 1px solid #1C2133;
     justify-content: flex-end;
+    -webkit-app-region: drag;
+    -webkit-user-select: none;
   }
 
   .kan-header__title {

@@ -1,5 +1,6 @@
 <template>
   <aside class="kan-sidebar">
+    <div class="kan-drag"></div>
     <ul class="kan-menu">
       <li class="kan-menu__headline">Entdecken</li>
       <li class="kan-menu__headline">Deine Musik</li>
@@ -11,11 +12,19 @@
 <style lang="scss" scoped>
   @import '../../assets/scss/variables.scss';
 
+  .kan-drag {
+    -webkit-app-region:drag;
+    height: 50px;
+    position: absolute;
+    width: 211px;
+  }
+
   .kan-sidebar {
     background: $color-blue;
     height: 100vh;
     width: 210px;
     border-right: 1px solid $color-blue--light;
+    position: relative;
   }
 
   .kan-menu {
