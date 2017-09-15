@@ -97,10 +97,38 @@
       font-weight: normal;
       display: flex;
       align-items: center;
+      position: relative;
+      transition: all .3s ease-in-out;
 
       span {
         color: $color-blue--shade;
       }
+
+      &::before {
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -28px;
+        width: 28px;
+        background: darken($color-blue, 1.5%);
+        content: '';
+        opacity: 0;
+        transition: all .3s ease-in-out;
+      }
+
+      &:hover {
+        background: darken($color-blue, 1.5%);
+        color: $color-light;
+
+        svg {
+          stroke: $color-light--icon;
+        }
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
     }
 
     svg {
@@ -113,6 +141,7 @@
       overflow: visible;
       margin-right: 11px;
       transform: translateY(-2px);
+      transition: all .3s ease-in-out;
     }
   }
 
