@@ -5,11 +5,18 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import * as svgicon from 'vue-svgicon'
+
 // require('./assets/css/global.css');
 
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false
+
+// Default tag name is 'svgicon'
+Vue.use(svgicon, {
+  tagName: 'svgicon'
+})
 
 /* eslint-disable no-new */
 new Vue({

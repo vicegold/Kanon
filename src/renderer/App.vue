@@ -5,6 +5,8 @@
 </template>
 
 <script>
+  import './compiled-icons'
+
   export default {
     name: 'Kanon',
     raumserverHost: 'http://192.168.7.234:8080'

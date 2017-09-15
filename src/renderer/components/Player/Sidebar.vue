@@ -5,7 +5,10 @@
       <li class="kan-menu__headline">
         Entdecken
         <ul>
-          <li>Home</li>
+          <li>
+            <svgicon name="home" width="18" height="18"></svgicon>
+            Home
+          </li>
           <li>Warteschlange</li>
           <li>HYMN Mix</li>
           <li>Radio </li>
@@ -46,11 +49,12 @@
     -webkit-app-region:drag;
     height: 50px;
     position: fixed;
-    width: 211px;
+    width: 210px;
     background: $color-blue;
     z-index: 100;
     left: 0;
     top: 0;
+    border-right: 1px solid $color-blue--light;
   }
 
   .kan-sidebar {
@@ -91,10 +95,24 @@
       line-height: 3.5;
       font-size: 0.8125rem;
       font-weight: normal;
+      display: flex;
+      align-items: center;
 
       span {
         color: $color-blue--shade;
       }
+    }
+
+    svg {
+      stroke: $color-gray;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: none;
+      width: 17px;
+      stroke-width: 1.7;
+      overflow: visible;
+      margin-right: 11px;
+      transform: translateY(-2px);
     }
   }
 
