@@ -1,4 +1,4 @@
-# kanon
+# Kanon
 
 > Open source controller for Raumfeld multiroom devices.
 
