@@ -16,6 +16,9 @@ yarn run dev
 # build electron application for production
 yarn run build
 
+# build SVG icons
+yarn run svg
+
 # run unit & end-to-end tests
 yarn test
 
